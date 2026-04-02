@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{F1B043AF-5CD8-758F-FAD0-88D92CE872AF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <PublicIncludeDirectories>
+    </PublicIncludeDirectories>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\quentin\Documents\Isart\GP5\isart_low_level_optim\src;C:\Users\quentin\Documents\Isart\GP5\isart_low_level_optim\src\glad;C:\Users\quentin\Documents\Isart\GP5\isart_low_level_optim\src\imgui;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <PublicIncludeDirectories>
+    </PublicIncludeDirectories>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\src\imgui\backends;$(ProjectDir)\src;$(ProjectDir)\src\glad;$(ProjectDir)\src\imgui</IncludePath>
+    <LibraryPath>$(ProjectDir)\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <PublicIncludeDirectories>
+    </PublicIncludeDirectories>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\quentin\Documents\Isart\GP5\isart_low_level_optim\src;C:\Users\quentin\Documents\Isart\GP5\isart_low_level_optim\src\glad;C:\Users\quentin\Documents\Isart\GP5\isart_low_level_optim\src\imgui;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <PublicIncludeDirectories>
+    </PublicIncludeDirectories>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\src\imgui\backends;$(ProjectDir)\src;$(ProjectDir)\src\glad;$(ProjectDir)\src\imgui</IncludePath>
+    <LibraryPath>$(ProjectDir)\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);TRACY_ENABLE;</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>tracy-master\public\tracy;tracy-master\server;tracy-master\public;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);TRACY_ENABLE;</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>tracy-master\public\tracy;tracy-master\server;tracy-master\public;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\glad\glad.c" />
+    <ClCompile Include="src\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="src\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="src\imgui\imgui.cpp" />
+    <ClCompile Include="src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="src\imgui\imgui_tables.cpp" />
+    <ClCompile Include="src\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="tracy-master\public\TracyClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\glad\glad.h" />
+    <ClInclude Include="src\GLFW\glfw3.h" />
+    <ClInclude Include="src\GLFW\glfw3native.h" />
+    <ClInclude Include="src\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="src\imgui\backends\imgui_impl_glut.h" />
+    <ClInclude Include="src\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="src\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="src\imgui\imconfig.h" />
+    <ClInclude Include="src\imgui\imgui.h" />
+    <ClInclude Include="src\imgui\imgui_internal.h" />
+    <ClInclude Include="src\imgui\imstb_rectpack.h" />
+    <ClInclude Include="src\imgui\imstb_textedit.h" />
+    <ClInclude Include="src\imgui\imstb_truetype.h" />
+    <ClInclude Include="src\khr\khrplatform.h" />
+    <ClInclude Include="tracy-master\capture\src\CaptureOutput.hpp" />
+    <ClInclude Include="tracy-master\profiler\src\EmscriptenShim.hpp" />
+    <ClInclude Include="tracy-master\public\common\TracyTaggedUserlandAddress.hpp" />
+    <ClInclude Include="tracy-master\server\TracyBroadcast.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
